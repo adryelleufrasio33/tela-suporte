@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .container:before, .container:after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background-color: #007bff;
+            border-radius: 50%;
+        }
+        .container:before {
+            left: -20px;
+            top: -40px;
+        }
+        .container:after {
+            right: -20px;
+            bottom: -20px;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            width: 40%;
+            border-radius: 20px;
+        }
+        .back-arrow {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-size: 24px;
+            color: #007bff;
+            cursor: pointer;
+        }
+        .line {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: #007bff;
+            border-radius: 50%;
+            top: -20px;
+            right: -70px;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-arrow">&larr;</div>
+        <div class="image-container">
+            <img src="SmartClamp-Logo.png" alt="Descrição da Imagem">
+        </div>
+        
+        <div class="contact-info">
+            <p>Entre em contato por um de nossos canais, fale com um de nossos atendentes e adquira o SmartClamps™.</p>
+            <p>&#9742; (123) 456-7890</p>
+            <p>&#x1F4F1; +55 12 34567-8901</p>
+            <p>&#x2709; exemplo@email.com</p>
+        </div>
+        
+        <div class="line"></div>
+        
+        <p style="text-align: center;">SmartClamps™</p>
+    </div>
+</body>
+</html>
