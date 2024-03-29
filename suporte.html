@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +16,7 @@
             max-width: 800px; /* Aumenta a largura do contêiner */
             margin: 50px auto;
             background-color: #fff;
-            padding: 20px;
+            padding: 40px 20px; /* Espaçamento maior */
             border-radius: 20px; /* Adiciona bordas arredondadas */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative; /* Define a posição como relativa para adicionar pseudo-elementos */
@@ -50,6 +51,7 @@
         }
         .image-container {
             text-align: center;
+            margin-bottom: 20px;
         }
         .image-container img {
             width: 40%; /* Reduz a largura da imagem */
@@ -71,17 +73,21 @@
         }
         /* Estilo para a elipse */
         .container::before {
-    content: "";
-    position: absolute;
-    width: 100px; /* Largura da elipse */
-    height: 40px; /* Altura da elipse */
-    background-color: #007bff; /* Cor da elipse */
-    border-radius: 50%; /* Torna a elipse uma elipse */
-    top: -20px; /* Posicionamento superior */
-    right: -70px; /* Posicionamento direito */
-    transform: rotate(-45deg); /* Gira a elipse */
-}
-
+            content: "";
+            position: absolute;
+            width: 100px; /* Largura da elipse */
+            height: 40px; /* Altura da elipse */
+            background-color: #007bff; /* Cor da elipse */
+            border-radius: 50%; /* Torna a elipse uma elipse */
+            top: -20px; /* Posicionamento superior */
+            right: -70px; /* Posicionamento direito */
+            transform: rotate(-45deg); /* Gira a elipse */
+        }
+        /* Alinhar o texto abaixo da logo */
+        .text-below-logo {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -92,11 +98,16 @@
             <img src="SmartClamp-Logo.png" alt="Descrição da Imagem">
         </div>
         
+        <!-- Texto abaixo da logo -->
+        <div class="text-below-logo">
+            <p>Entre em contato por um de nossos canais,</p>
+            <p>fale com um de nossos atendentes e adquira o SmartClamps™.</p>
+        </div>
+        
         <div class="contact-info">
-            <p>Entre em contato por um de nossos canais, fale com um de nossos atendentes e adquira o SmartClamps™.</p>
-            <p>&#9742; (123) 456-7890</p>
-            <p>&#x1F4F1; +55 12 34567-8901</p>
-            <p>&#x2709; exemplo@email.com</p>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-mobile-alt"></i> +55 12 34567-8901</p>
+            <p><i class="far fa-envelope"></i> exemplo@email.com</p>
         </div>
         
         <!-- Linha -->
