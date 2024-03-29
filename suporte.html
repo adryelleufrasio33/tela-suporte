@@ -12,47 +12,48 @@
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
+            max-width: 800px; /* Aumenta a largura do contêiner */
             margin: 50px auto;
             background-color: #fff;
             padding: 20px;
-            border-radius: 20px;
+            border-radius: 20px; /* Adiciona bordas arredondadas */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-            overflow: hidden;
+            position: relative; /* Define a posição como relativa para adicionar pseudo-elementos */
+            overflow: hidden; /* Garante que o conteúdo do pseudo-elemento não ultrapasse o contêiner */
         }
         h1 {
             text-align: center;
             color: #333;
-            margin-top: 0;
+            margin-top: 0; /* Remover margem superior do título */
         }
         .contact-info {
             text-align: center;
             font-size: 24px;
             margin-top: 20px;
         }
+        /* Adiciona semicírculos nas bordas */
         .container:before, .container:after {
             content: "";
             position: absolute;
-            width: 20px;
-            height: 40px;
-            background-color: #007bff;
-            border-radius: 50%;
+            width: 20px; /* Largura dos semicírculos */
+            height: 40px; /* Altura dos semicírculos */
+            background-color: #007bff; /* Cor dos semicírculos */
+            border-radius: 50%; /* Torna os semicírculos círculos */
         }
         .container:before {
-            left: -20px;
-            top: -40px;
+            left: -20px; /* Posicionamento do semicírculo esquerdo */
+            top: -20px; /* Posicionamento superior */
         }
         .container:after {
-            right: -20px;
-            bottom: -20px;
+            right: -20px; /* Posicionamento do semicírculo direito */
+            bottom: -20px; /* Posicionamento inferior */
         }
         .image-container {
             text-align: center;
         }
         .image-container img {
-            width: 40%;
-            border-radius: 20px;
+            width: 40%; /* Reduz a largura da imagem */
+            border-radius: 20px; /* Adiciona bordas arredondadas à imagem */
         }
         .back-arrow {
             position: absolute;
@@ -62,28 +63,32 @@
             color: #007bff;
             cursor: pointer;
         }
+        /* Estilo para a linha */
         .line {
             border-top: 1px solid #ccc;
             margin-top: 20px;
             margin-bottom: 20px;
         }
+        /* Estilo para a elipse */
         .container::before {
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 40px;
-            background-color: #007bff;
-            border-radius: 50%;
-            top: -20px;
-            right: -70px;
-            transform: rotate(-45deg);
-        }
+    content: "";
+    position: absolute;
+    width: 100px; /* Largura da elipse */
+    height: 40px; /* Altura da elipse */
+    background-color: #007bff; /* Cor da elipse */
+    border-radius: 50%; /* Torna a elipse uma elipse */
+    top: -20px; /* Posicionamento superior */
+    right: -70px; /* Posicionamento direito */
+    transform: rotate(-45deg); /* Gira a elipse */
+}
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="back-arrow">&larr;</div>
+        <div class="back-arrow">&larr;</div> <!-- Adicionando a seta -->
         <div class="image-container">
+            <!-- Adicionando uma imagem -->
             <img src="SmartClamp-Logo.png" alt="Descrição da Imagem">
         </div>
         
@@ -94,8 +99,10 @@
             <p>&#x2709; exemplo@email.com</p>
         </div>
         
+        <!-- Linha -->
         <div class="line"></div>
         
+        <!-- Texto "SmartClamps™" -->
         <p style="text-align: center;">SmartClamps™</p>
     </div>
 </body>
